@@ -9,8 +9,8 @@
     .category-button {
       padding: 1rem 2rem;
       font-size: 1.1rem;
-      background: linear-gradient(135deg, #3f51b5, #5c6bc0);
-      color: white;
+      background: linear-gradient(135deg, #ffffff, #cdcdcd);
+      color: black;
       border: none;
       border-radius: 8px;
       cursor: pointer;
@@ -24,41 +24,43 @@
 
     .category-buttons-wrapper {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column; /* stack buttons vertically */
       gap: 1rem;
-      justify-content: center;
-      margin-top: 2rem;
     }
+
   </style>
+
 </head>
 <body>
   <div class="top-banner">
-     <h1>GOYAL SANITARY HOUSE </h1>
+    <h1>GOYAL SANITARY HOUSE </h1>
     <div class="contact-info">📞 +91- 9872563263 | ✉️ goyalsanitaryhouse1@gmail.com</div>
   </div>
 
   <header>
     <div class="tabs">
-<!--   <button class="active" onclick="showCategory(event, 'tiles')">Tiles</button> -->
-  <button onclick="location.href='sanitary.html'">Sanitary</button>
-  <button class="active" onclick="showCategory(event, 'toilets')">Toilets</button>
-  <button onclick="showCategory(event, 'sets')">Sets</button>
-  <button onclick="location.href='vanity.html'">Vanity/Cabinet</button>
-</div>
-
+      <!-- <button class="active" onclick="showCategory(event, 'tiles')">Tiles</button> -->
+      <button onclick="location.href='sanitary.html'"><B>Sanitary</B></button>
+      <button onclick="showCategory(event, 'toilets')"><b>Toilets</b></button>
+      <button onclick="showCategory(event, 'sets')"><b>Wash Basin</b></button>
+      <button onclick="location.href='vanity.html'"><b>Vanity/Cabinet</b></button>
+    </div>
   </header>
 
-<!--   <div class="gallery" id="tiles">
+
+  <!-- <div class="gallery" id="tiles">
     <div class="category-buttons-wrapper">
       <button class="category-button" onclick="location.href='2x2_double_charge.html'">2x2 Double Charge</button>
       <button class="category-button" onclick="location.href='2x2_porcelain_matt.html'">2x2 Porcelain Matt</button>
       <button class="category-button" onclick="location.href='PGVT_2x4.html'">2x4 PGVT</button>
-      <button class="category-button" onclick="location.href='parking.html'">Parking Tiles</button>
+      <button class="category-button" onclick="location.href='12x18.html'">12x18 Wall Tiles</button>
+      <button class="category-button" onclick="location.href='12x24.html'">12x24 Wall Tiles</button>
+      <button class="category-button" onclick="location.href='parking.html'">16x16 Tiles</button>
     </div>
   </div> -->
 
   
-  <div class="gallery" id="toilets">
+  <div class="gallery hidden" id="toilets">
     <div class="category-buttons-wrapper">
       <button class="category-button" onclick="location.href='siphonic.html'">Siphonic Toilets</button>
       <button class="category-button" onclick="location.href='non_siphonic.html'">Non-Siphonic Toilets</button>
@@ -69,10 +71,14 @@
 
   <div class="gallery hidden" id="sets">
     <div class="category-buttons-wrapper">
-      <button class="category-button" onclick="location.href='vitrosa.html'">Vitrosa Sets</button>
-      <button class="category-button" onclick="location.href='damru_designer.html'">Designer/Damru</button>
+      <button class="category-button" onclick="location.href='White_WB.html'">White Washbasin</button>
+      <button class="category-button" onclick="location.href='vitrosa.html'">Colour Washbasin</button>
+      <!-- <button class="category-button" onclick="location.href='damru_designer.html'">Damru Washbasin</button> -->
+      <!-- <button class="category-button" onclick="location.href='Diamond_WB.html'">Diamond Washbasin</button> -->
     </div>
   </div>
+
+  
 
   
 
@@ -93,9 +99,4 @@
   </script>
 
 </body>
-
-</html>
-
-
-
-
+</html>>
